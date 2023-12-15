@@ -5,39 +5,87 @@ body{
     background-color: #EADBC8;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     height: 100vh;
+    width: 100vw;
     font-family: 'Cormorant Garamond', serif;
 
 }
-h2{
+p{
     color: #0F2C59;
     font-weight: 600;
 }
-h1{
-    color: #0F2C59;
-    font-weight: 700;
-}
-p{
-    color: #0F2C59;
-    font-weight: 700;
-}
-button{
-    background-color: #0F2C59;
-    color: white;
-}
 .main-div{
+    position: relative;
     height: 70%;;
-    width: 90%;
+    width: 80%;
     background-color: bisque;
     border: 1px solid black;
-    margin-top: 40px;
     background-image: url("./assets/background-image.png");
     background-size: cover; /* Resize the background image to cover the entire container */
     mix-blend-mode: color-burn;
 }
 .mini-div{
-    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #F2F2F2;
+    width: 200px;
+    height: 100px;
+    top: 250px;
+    border: 1px solid #0F2C59;
+}
+
+.headings{
+    margin-top: 90px;
+    margin-left: 20px;
+    
+}
+.headings h2{
+    color: #0F2C59;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.headings h1{
+    color: #0F2C59;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.headings h3{
+    color: #0F2C59;
+    font-weight: 700;
+    margin-left: 60px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mini-div button{
+    background-color: #0F2C59;
+    color: white;
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    border: 1px solid #0F2C59;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.mini-div button:hover{
+    background-color: #F2F2F2;
+    color: #0F2C59;
+    border: 1px solid #0F2C59;
+}
+.image{
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    right: 22%;
+    bottom: 74%;
 }
