@@ -9,9 +9,21 @@
 
 }
 @keyframes leftRightMove {
+    
     0%, 100% { transform: translateX(0px); } /* Move 10px to the left */
     50% { transform: translateX(12px); } /* Move 10px to the right */
 }   
+
+@keyframes upDownMove {
+    0%, 100% {
+        transform: translate(38%, -25px); /* Start and end 5px up from the original position */
+    }
+    50% {
+        transform: translate(34%, -15px); /* Move 5px down from the original position */
+    }
+}
+
+
 .header{
     position: relative;
     display: flex;
@@ -20,10 +32,11 @@
     align-items: center;
     border: solid 1px black;
     width: 80%;
+    height: 60px;
     margin-left: 10%;
     margin-right: 10%;
     top: 110px;
-    background-image: url("./assets/bg-image.png");
+    background-image: url("./assets/bg-image2.png");
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 .header button{
@@ -32,12 +45,12 @@
     width: 160px;
     height: 40px;
     text-decoration: none;
-    margin: 10px;
     font-size: 20px;
     font-family: 'Cormorant Garamond', serif;
     border: 1px solid #0F2C59;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-right: 30px;
 }
 .header button:hover{
     background-color: #F2F2F2;
@@ -47,12 +60,13 @@
 h1{
     font-family: 'Cormorant Garamond', serif;
     background: none;
-    margin-left: 120px;
+    margin-left: 105px;
+    color: #0F2C59;
 }
 .im img{
     position: absolute;
     top: 0;
-    left: 10%;
+    left: 9%;
     height: auto;
     background: none;
     background-repeat: no-repeat;
@@ -60,3 +74,40 @@ h1{
     animation: leftRightMove 3s ease-in-out; /* Adjust time and easing as needed */
 
 }
+.im2 img{
+    position: absolute;
+    top: 95px;
+    right: 10%;
+    height: auto;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(-90deg);
+
+
+}
+.im3 img{
+    position: absolute;
+    right: 10%;
+    height: auto;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 172px;
+    z-index: -1;
+    animation: upDownMove 4s ease-in-out infinite; /* Loop the animation */
+
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-bottom: 2%;
+  }
+  
+  .footer a {
+    margin-left: 20px; /* Adjust as needed for spacing between icons */
+  }
