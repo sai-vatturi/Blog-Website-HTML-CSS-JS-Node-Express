@@ -39,7 +39,7 @@
     background-image: url("./assets/bg-image2.png");
     background-size: cover; /* Resize the background image to cover the entire container */
 }
-.header button{
+button{
     background-color: #0F2C59;
     color: #EADBC8;
     width: 160px;
@@ -52,7 +52,7 @@
     cursor: pointer;
     margin-right: 30px;
 }
-.header button:hover{
+button:hover{
     background-color: #F2F2F2;
     color: #0F2C59;
     border: 1px solid #0F2C59;
@@ -96,9 +96,8 @@ h1{
     top: 172px;
     z-index: -1;
     animation: upDownMove 4s ease-in-out infinite; /* Loop the animation */
-
 }
-.footer {
+.footer{
     position: fixed;
     bottom: 0;
     right: 0;
@@ -106,8 +105,14 @@ h1{
     justify-content: flex-end;
     margin-right: 10%;
     margin-bottom: 2%;
-  }
+}
   
-  .footer a {
+.footer a {
     margin-left: 20px; /* Adjust as needed for spacing between icons */
-  }
+}
+.dialog-container{
+    display: flex;
+}
+dialog{
+    justify-content: center;
+}
