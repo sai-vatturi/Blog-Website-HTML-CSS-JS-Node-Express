@@ -6,6 +6,7 @@
     <title>View Blogs - Sai</title>
     <link rel="stylesheet" href="styles.css" />
 
+
 </head>
 <body>
     <div class="header">
@@ -25,13 +26,16 @@
         <dialog id="myFirstDialog" class="dialog">  
 
             <label id="name">Name: </label>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
-            <!-- <br> -->
+            <input type="text" class="w3-input" id="name" name="name" placeholder="Enter Your Name" required>
+            <br>
             <label id="title">Blog Title: </label>
-            <input type="text" id="title" name="title" placeholder="Enter Title Here" required>
-            <!-- <br> -->
+            <input type="text" class="w3-input" id="title" name="title" placeholder="Enter Title Here" required>
+            <br>
             <label id="text">Blog Text:</label>
-            <input type="text" id="text" name="text" placeholder="Enter Your text" required>
+            <!-- <textarea class="w3-input w3-border" style="resize:both" data-gtm-form-interact-field-id="0"></textarea> -->
+            <div contenteditable >
+                
+            </div>
             <br>
             <button type = "submit" id="submit">Submit</button>
             <button id="close">Close</button>  
