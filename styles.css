@@ -66,7 +66,7 @@
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 .header h1{
-    margin-left: 100px;
+    margin-left: 105px;
 }
 button{
     background-color: #0f2c59;
@@ -202,7 +202,7 @@ textarea{
     display: flex;
     justify-content: flex-end;
     margin-right: 10%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
   
 .footer a{
