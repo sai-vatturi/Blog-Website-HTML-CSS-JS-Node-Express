@@ -1,152 +1,211 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  background-color: #eadbc8;
-  font-family: "Cormorant Garamond", serif;
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #eadbc8;
+    font-family: "Cormorant Garamond", serif;
 }
+*:focus {
+    outline: none;
+  }
 @keyframes leftRightMove {
-  0%,
-  100% {
-    transform: translateX(0px);
-  } /* Move 10px to the left */
-  50% {
-    transform: translateX(12px);
-  } /* Move 10px to the right */
+    0%,
+    100% {transform: translateX(0px);} /* Move 10px to the left */
+    50% {transform: translateX(12px);} /* Move 10px to the right */
 }
 
 @keyframes upDownMove {
-  0%,
-  100% {
-    transform: translate(
-      38%,
-      -25px
-    ); /* Start and end 5px up from the original position */
-  }
-  50% {
-    transform: translate(
-      34%,
-      -15px
-    ); /* Move 5px down from the original position */
-  }
+    0%,100% {transform: translate(38%,-25px);} /* Start and end 5px up from the original position */
+    50% {transform: translate(34%,-15px);} /* Move 5px down from the original position */
 }
 
-.header {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border: solid 1px black;
-  width: 80%;
-  height: 60px;
-  margin-left: 10%;
-  margin-right: 10%;
-  top: 110px;
-  background-image: url("./assets/bg-image2.png");
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-button {
-  background-color: #0f2c59;
-  color: #eadbc8;
-  width: 160px;
-  height: 40px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Cormorant Garamond", serif;
-  border: 1px solid #0f2c59;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin-right: 30px;
-}
-button:hover {
-  background-color: #f2f2f2;
-  color: #0f2c59;
-  border: 1px solid #0f2c59;
-}
-h1 {
-  font-family: "Cormorant Garamond", serif;
-  background: none;
-  margin-left: 105px;
-  color: #0f2c59;
-}
-.im img {
-  position: absolute;
-  top: 0;
-  left: 9%;
-  height: auto;
-  background: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: leftRightMove 3s ease-in-out; /* Adjust time and easing as needed */
-}
-.im2 img {
-  position: absolute;
-  top: 95px;
-  right: 10%;
-  height: auto;
-  background: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotate(-90deg);
-}
-.im3 img {
-  position: absolute;
-  right: 10%;
-  height: auto;
-  background: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 172px;
-  z-index: -1;
-  animation: upDownMove 4s ease-in-out infinite; /* Loop the animation */
-}
-.footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10%;
-  margin-bottom: 2%;
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 100px;
+    background-image: url("./assets/bg-image.png");
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.footer a {
-  margin-left: 20px; /* Adjust as needed for spacing between icons */
+.mini-div{
+    display: flex;
+    position: absolute;
+    border: solid 1px black;
+    background-color: #F2F2F2;
+    color: #0F2C59;
+    width: 300px;
+    height: 150px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 10%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.w3-input {
-  padding-top: 20px;
-  /* padding-bottom: 20px; */
-  display: block;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  font-size: 18px;
+
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 110px;
+    background-image: url("./assets/bg-image2.png");
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
-*:focus {
-  outline: none;
+.header h1{
+    margin-left: 100px;
 }
+button{
+    background-color: #0f2c59;
+    color: #eadbc8;
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #0f2c59;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.add-button{
+    margin-right: 20px;
+}
+button:hover{
+    background-color: #f2f2f2;
+    color: #0f2c59;
+    border: 1px solid #0f2c59;
+}
+img{
+    position: absolute;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+}
+.headings{
+    background: none;
+    margin-top: 90px;
+    margin-left: 20px;
+    
+}
+h1, h2, h3, p{
+    background: none;
+    color: #0F2C59;
+}
+
+.headings{
+    margin-top: 90px;
+    margin-left: 20px;
+    
+}
+.headings h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+.headings h1{
+    font-size: 55px;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.headings h3{
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 80px;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.kid-image img {
+    top: 0;
+    left: 9%;
+    animation: leftRightMove 3s ease-in-out; /* Adjust time and easing as needed */
+  }
+  .cat-hand img {
+    top: 95px;
+    right: 10%;
+    transform: rotate(-90deg);
+  }
+  .cat-image img {
+    right: 10%;
+    top: 172px;
+    z-index: -1;
+    animation: upDownMove 4s ease-in-out infinite; /* Loop the animation */
+  }
+.guy-image img{
+    position: absolute;
+    height: 400px;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: leftRightMove 3s ease-in-out; /* Adjust time and easing as needed */
+
+}
+.dialog{
+    padding: 10px;
+    position: fixed;  /* Use fixed or absolute position */
+    top: 50%;         /* Position the top edge of the div in the middle of the screen */
+    left: 50%;        /* Position the left edge of the div in the middle of the screen */
+    width: 500px;
+    height: 450px;
+    transform: translate(-50%, -50%); 
+    font-size: 20px;
+  }
+  .dialog-in{
+    display: block;
+  }
+  .dialog-buttons{
+    display: flex;
+    justify-content: space-around;
+  }
+.text-input {
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    font-size: 18px;
+  }
+
 textarea{
     padding-top: 20px;
     border-bottom: 1px solid #ccc;
     height: 20vh;
     overflow: auto;
 }
-.dialog{
-  padding: 10px;
-  position: fixed;  /* Use fixed or absolute position */
-  top: 50%;         /* Position the top edge of the div in the middle of the screen */
-  left: 50%;        /* Position the left edge of the div in the middle of the screen */
-  width: 500px;
-  height: 450px;
-  transform: translate(-50%, -50%); 
-  font-size: 20px;
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-bottom: 40px;
 }
-.dialog-in{
-  display: block;
+  
+.footer a{
+    margin-left: 40px; /* Adjust as needed for spacing between icons */
 }
-.dialog-buttons{
-  display: flex;
-  justify-content: space-around;
-}
+  
