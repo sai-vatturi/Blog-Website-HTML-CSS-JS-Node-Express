@@ -22,25 +22,28 @@
     <div class="im3">
         <img src="./assets/cat.svg" alt="cathand" />
     </div>
-    <div class="dialog-container">
-        <dialog id="myFirstDialog" class="dialog">  
+    <dialog id="myFirstDialog" class="dialog">
+        <div class="dialog-in">  
 
-            <label id="name">Name: </label>
+            <label id="name"><b>Name: </b></label>
             <input type="text" class="w3-input" id="name" name="name" placeholder="Enter Your Name" required>
             <br>
-            <label id="title">Blog Title: </label>
+            <label id="title"><b>Blog Title: </b></label>
             <input type="text" class="w3-input" id="title" name="title" placeholder="Enter Title Here" required>
             <br>
-            <label id="text">Blog Text:</label>
-            <!-- <textarea class="w3-input w3-border" style="resize:both" data-gtm-form-interact-field-id="0"></textarea> -->
-            <div contenteditable >
-                
-            </div>
+            <label id="text"><b>Blog Text:</b></label>
             <br>
-            <button type = "submit" id="submit">Submit</button>
-            <button id="close">Close</button>  
-        </dialog>  
-    </div>
+            <textarea class="w3-input w3-border" style="resize:none" data-gtm-form-interact-field-id="0"></textarea>
+            <!-- <textarea></textarea> -->
+            <br>
+            <di class="dialog-buttons">
+                <button type = "submit" id="submit">Submit</button>
+                <button id="close">Close</button>  
+            </di>
+
+        </div>  
+    </dialog>
+    
    
     <div class="footer">
         <a href="https://www.linkedin.com/in/sai-vatturi/"><img src="./assets/linkedIn.svg" alt="LinkedIn" width="20px" /></a>
