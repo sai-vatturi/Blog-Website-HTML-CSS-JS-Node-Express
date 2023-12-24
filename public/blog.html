@@ -24,23 +24,25 @@
     </div>
     <dialog id="myFirstDialog" class="dialog">
         <div class="dialog-in">  
+            <form action="/submit" method="POST">
+                <label id="name"><b>Name: </b></label>
+                <input type="text" class="text-input" id="name" name="name" placeholder="Enter Your Name" required>
+                <br>
+                <label id="title"><b>Blog Title: </b></label>
+                <input type="text" class="text-input" id="title" name="title" placeholder="Enter Title Here" required>
+                <br>
+                <label id="text"><b>Blog Text:</b></label>
+                <br>
+                <textarea class="text-input" style="resize:none" data-gtm-form-interact-field-id="0"></textarea>
+                <!-- <textarea></textarea> -->
+                <br>
+                <di class="dialog-buttons">
+                    <button type = "submit" id="submit">Submit</button>
+                    <button id="close">Close</button>  
+                </di>    
+            </form>
 
-            <label id="name"><b>Name: </b></label>
-            <input type="text" class="text-input" id="name" name="name" placeholder="Enter Your Name" required>
-            <br>
-            <label id="title"><b>Blog Title: </b></label>
-            <input type="text" class="text-input" id="title" name="title" placeholder="Enter Title Here" required>
-            <br>
-            <label id="text"><b>Blog Text:</b></label>
-            <br>
-            <textarea class="text-input" style="resize:none" data-gtm-form-interact-field-id="0"></textarea>
-            <!-- <textarea></textarea> -->
-            <br>
-            <di class="dialog-buttons">
-                <button type = "submit" id="submit">Submit</button>
-                <button id="close">Close</button>  
-            </di>
-
+            
         </div>  
     </dialog>
     
