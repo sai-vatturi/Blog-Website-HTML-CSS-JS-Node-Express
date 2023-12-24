@@ -6,18 +6,26 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const port = 3000;
+let blogPosts = []; // This array will store your blog posts
 
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use(express.static('public')); // Serve static files from the 'public' directory
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
 });
+
 app.get('/blog.html', (req, res) => {
-    res.sendFile(__dirname + '/public/blog.html');
+    res.render("index.ejs", { blogPosts: blogPosts });
 });
+
 app.post('/submit', (req, res) => {
-    console.log(req.body);
+    const { name, title, blogtext } = req.body;
+    blogPosts.push({ name, title, blogtext });
+    res.redirect('/blog.html');
 });
+
+
 app.listen(3000, () => {
     console.log(`Server is running on port ${port}`);
 });

@@ -195,6 +195,7 @@ textarea{
     height: 20vh;
     overflow: auto;
 }
+
 .blogs-container{
     position: absolute;
     width: 70%;
@@ -202,6 +203,15 @@ textarea{
     margin-left: 10%;
     background: none;
     text-align: justify;
+    z-index: -1;
+}
+
+hr {
+    border: 0.5px solid #C58C4E;
+}
+.blog-post{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .blogs-container h2{
     font-size: 30px;
