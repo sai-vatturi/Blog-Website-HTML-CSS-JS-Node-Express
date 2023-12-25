@@ -10,19 +10,20 @@ let blogPosts = []; // This array will store your blog posts
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static('public')); // Serve static files from the 'public' directory
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.get('/blog.html', (req, res) => {
+app.get('/blog', (req, res) => {
     res.render("index.ejs", { blogPosts: blogPosts });
 });
 
 app.post('/submit', (req, res) => {
     const { name, title, blogtext } = req.body;
     blogPosts.push({ name, title, blogtext });
-    res.redirect('/blog.html');
+    res.redirect('/blog');
 });
 
 

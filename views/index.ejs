@@ -65,7 +65,14 @@
             <p>Posted by: Saiii</p>
         </div>
         <hr>
-        <% include blogPost.ejs %>
+        <% blogPosts.forEach(function(post) { %>
+            <div class="blog-post">
+                <h2><%= post.title %></h2>
+                <p><%= post.blogtext %></p>
+                <p>Posted by: <%= post.name %></p>
+            </div>
+            <hr>
+        <% }); %>
     </div>
     
     
