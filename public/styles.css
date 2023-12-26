@@ -213,6 +213,13 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.blog-post .ralign{
+    text-align: right;
+    font-size: 18px;
+    color: #777777;
+    padding-top: 0px;
+
+}
 .blogs-container h2{
     font-size: 30px;
     font-weight: 600;
