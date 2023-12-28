@@ -52,11 +52,11 @@
             <div class="blog-post">
                 <h2><%= post.title %></h2>
                 <p><%= post.blogtext %></p>
-                <p class="ralign">Posted by: <%= post.name %></p>
+                <p class="ralign">Posted by: <b><%= post.name %></b></p>
                 <% if(post.date) { %>
                     <p class="ralign">Date: <%= new Date(post.date).toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' }) %></p>
                 <% } else { %>
-                    <p class="ralign">Date: Unknown</p>
+                    <p class="ralign"></p>
                 <% } %>
             </div>
             <hr>
