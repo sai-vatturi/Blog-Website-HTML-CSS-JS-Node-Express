@@ -1,18 +1,15 @@
 import {} from 'dotenv/config'
-
 import express from 'express';
 import {dirname} from 'path';
 import { fileURLToPath } from 'url';
 import bodyparser from 'body-parser';
 import mongoose from 'mongoose';
-import http from 'http';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
 const dbURI = process.env.MONGODB_URI;
 const app = express();
 const port = process.env.PORT;
-let blogPosts = [];
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Error connecting to MongoDB:', err));
