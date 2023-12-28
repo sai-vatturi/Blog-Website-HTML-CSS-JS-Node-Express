@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <!--Header-->
     <div class="header">
         <h1>My Blogs</h1>
         <button id="toggleDialog" class="add-button">Add New</button>
@@ -22,6 +23,8 @@
     <div class="cat-image">
         <img src="./assets/cat.svg" alt="cathand" />
     </div>
+
+    <!--Dialog-->
     <dialog id="myFirstDialog" class="dialog">
         <div class="dialog-in">  
             <form action="/submit" method="POST">
@@ -34,15 +37,12 @@
                 <label id="blogtext"><b>Blog Text:</b></label>
                 <br>
                 <textarea  type="text" class="text-input" style="resize:none" id="blogtext" name="blogtext"></textarea>
-                <!-- <textarea></textarea> -->
                 <br>
                 <di class="dialog-buttons">
                     <button type = "submit" id="submit">Submit</button>
                     <button id="close">Close</button>  
                 </di>    
-            </form>
-
-            
+            </form>            
         </div>  
     </dialog>
     
@@ -64,9 +64,7 @@
         
     </div>
     
-    
-
-
+    <!--Footer-->
     <div class="footer">
         <a href="https://www.linkedin.com/in/sai-vatturi/"><img src="./assets/linkedIn.svg" alt="LinkedIn" width="20px" /></a>
         <a href="https://github.com/sai-vatturi"><img src="./assets/github.svg" alt="GitHub" width="20px" /></a>
