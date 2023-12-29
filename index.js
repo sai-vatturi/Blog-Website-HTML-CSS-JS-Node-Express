@@ -4,6 +4,7 @@ import {dirname} from 'path';
 import { fileURLToPath } from 'url';
 import bodyparser from 'body-parser';
 import mongoose from 'mongoose';
+import methodOverride from 'method-override';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dbURI = process.env.MONGODB_URI;
@@ -24,6 +25,7 @@ const blogSchema = new mongoose.Schema({
 const BlogPost = mongoose.model('BlogPost', blogSchema);  
 
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use(methodOverride('_method')); // Include method-override
 app.use(express.static('public'));
 
 
@@ -47,6 +49,12 @@ app.post('/submit', (req, res) => {
       .catch(err => console.error(err));
   });
   
+app.delete('/blog/:id', (req, res) => {
+    const postId = req.params.id;
+    BlogPost.findOneAndDelete({ _id: postId })
+        .then(() => res.redirect('/blog'))
+        .catch(err => console.error(err));
+});
 
 
 app.listen(3000, () => {

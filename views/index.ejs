@@ -58,6 +58,9 @@
                 <% } else { %>
                     <p class="ralign"></p>
                 <% } %>
+                <form action="/blog/<%= post._id %>?_method=DELETE" method="POST">
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
             </div>
             <hr>
         <% }); %>
