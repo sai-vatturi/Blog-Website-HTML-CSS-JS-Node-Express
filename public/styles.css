@@ -243,9 +243,5 @@ hr {
   
 .footer a{
     margin-left: 40px; /* Adjust as needed for spacing between icons */
-}
-
-
-@media screen {
-    
+    margin-right: 0px;
 }
