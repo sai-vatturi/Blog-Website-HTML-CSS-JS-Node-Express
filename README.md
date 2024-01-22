@@ -15,28 +15,45 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/sai-vatturi/Blog-Website-HTML-CSS-JS-Node-Express.git
+git clone https://github.com/sai-vatturi/Blog-Website-HTML-CSS-JS-Node-Express.git
 ```
    
 2. Navigate to the project directory:
    
 ```bash
-    cd Blog-Website-HTML-CSS-JS-Node-Express
+cd Blog-Website-HTML-CSS-JS-Node-Express
 ```
 
 3. Install dependencies:
    
 ```bash
-npm i
+npm install
+```
+## Usage
+
+1. Start the server
+```bash
+npm start
 ```
 
+2. Open your web browser and visit http://localhost:3000 to access the blog website.
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- EJS (Embedded JavaScript)
+  
 ## Screenshots
 
 <img width="1506" alt="image" src="https://github.com/sai-vatturi/Blog-Website-HTML-CSS-JS-Node-Express/assets/115538210/ee6a51dc-bc91-422c-b1e2-0f53fc3d83f7">
 
-![Uploading image.png…]()
+<img width="1505" alt="image" src="https://github.com/sai-vatturi/Blog-Website-HTML-CSS-JS-Node-Express/assets/115538210/d8a0886f-e617-4a18-98b6-5909ba0b0bad">
 
-    
 
   
